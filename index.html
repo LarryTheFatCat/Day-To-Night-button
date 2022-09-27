@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <link rel="stylesheet" href="style.css">
+    <title>Day to Night Button</title>
+</head>
+<body>
+    <script>
+    var button = document.createElement("button");
+    var background = document.body.style.backgroundColor;
+    button.innerHTML = "Click Me";
+    button.style.position = "absolute";
+    button.style.top = "50%";
+    button.style.left = "50%";
+    button.style.width = "100%";
+    button.style.height = "100%";
+    button.style.transform = "translate(-50%, -50%)";
+    button.style.padding = "10px 20px";
+    button.style.border = "none";
+    button.style.borderRadius = "5px";
+    button.style.backgroundColor = "white";
+    button.style.color = "black";
+    button.style.fontSize = "20px";
+    button.style.cursor = "pointer";
+    button.style.outline = "none";
+    button.style.transition = "all 0.3s ease";
+    button.addEventListener("click", function() {
+    if (button.style.backgroundColor == "white") {
+        button.style.backgroundColor = "darkgray";
+        button.style.color = "white";
+    } else {
+        button.style.backgroundColor = "white";
+        button.style.color = "black";
+    }
+    });
+document.body.appendChild(button);
+    </script>
+</body>
+</html>
