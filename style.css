@@ -9,7 +9,7 @@ body {
 }
 
 body.dark {
-    background-color: grey;
+    background-color: rgb(0, 0, 0);
     -webkit-transition: 0.2s;
     transition: 0.2s;
 }
