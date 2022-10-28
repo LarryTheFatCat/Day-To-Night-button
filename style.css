@@ -3,6 +3,15 @@ body {
     display: grid;
     place-content: center;
     height: 100vh;
+    overflow: hidden;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+body.dark {
+    background-color: grey;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 .switch {
     position: relative;

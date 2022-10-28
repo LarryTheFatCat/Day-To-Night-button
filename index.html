@@ -11,8 +11,19 @@
 <body>
     <script src="script.js"></script>
     <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
+        <input type="checkbox" id="checkbox">
+        <span class="slider round" id="slider-round"></span>
       </label>
+      <script>
+        const checkBox = document.querySelector('#checkbox');
+        document.addEventListener('change', () => {
+            // Change theme to black
+            if (checkBox.checked) {
+                document.body.classList.add('dark');
+            } else {
+                document.body.classList.remove('dark');
+            }
+        });
+      </script>
 </body>
 </html>
